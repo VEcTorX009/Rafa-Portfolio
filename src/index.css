@@ -1,13 +1,129 @@
+*{
+  transition: 0.4s ease-in-out;
+}
 body {
+  animation: fadein 3s ease-in-out;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #323437;
+}
+@keyframes fadein {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+
+  }
+}
+.heading{
+  font-size: 120px;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.main{
+  padding: 50px;
+}
+.navbar{
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 20px;
+}
+.btn{
+  font-family: monospace;
+  margin: 20px;
+  font-size: 20px;
+  padding: 50px;
+}
+.about{
+  padding: 61px;
+  background-size: cover;
+}
+.fa-moon{
+  font-size:40px;
+  cursor:pointer;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.fa-moon:active, .nav-link:active{
+  transition: 0.2s ease-in-out;
+  transform: scale(0.8);
+}
+
+#rafa{
+  color: blue;
+}
+.svg{
+background-attachment: fixed;
+background-size: cover;
+transition: 0.8s ease-in-out;
+}
+
+.spinner{
+  display: flex;
+  font-size: 30px;
+  color: white;
+}
+
+.fa-brands{
+  font-size: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding: 10px;
+  text-decoration: none;
+}
+.intro{
+  font-family: monospace;
+  font-size: 20px;
+
+}
+
+.paragraphs{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.paragraphs span{
+  line-height: 35px;
+  padding: 10px;
+}
+.nav-link:active{
+  color:blue
+}
+.copyright{
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+.copyright h2{
+  font-size: 20px;
+
+}
+.work{
+  font-family: monospace;
+}
+
+.work h2{
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.work span{
+  line-height: 35px;
+  padding: 10px;
+  margin-left: -10px;
+}
+
+.workinfo{
+  min-height: 51vh;
+  padding: 100px;
+  text-align: center;
+}
+
+.social a:hover{
+  transition: 0.5s ease-in-out;
+  filter: invert(1);
 }
