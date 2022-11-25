@@ -6,9 +6,6 @@ export default function Home(props) {
     const redirect = path => {
         history(path);
       };
-      const soon= ()=>{
-        alert("in development.")
-      }
   return (
     <>
 
@@ -16,9 +13,11 @@ export default function Home(props) {
       <div className={`container  text-center text-${props.mode==="dark"?"light":"dark"} main`}>
         <h1 className="heading">Hi I'm </h1><h1 className="heading" id="rafa">Rafael</h1>
         <h2 >A Tech Enthusiast</h2>
-        <button type="button" onClick={soon} className={`btn btn-${props.mode==="dark"?"dark":"light"} mt-5 my-2`}>
+        <a href="https://discord.gg/dE7V8ekbpq" target="_blank"rel="noreferrer">
+        <button type="button" className={`btn btn-${props.mode==="dark"?"dark":"light"} mt-5 my-2`}>
           Connect
         </button>
+        </a>
         <button type="button"  onClick={() => redirect('/about')}  className={`btn btn-${props.mode==="dark"?"dark":"light"} mt-1 my-3`}>
           About
         </button>
