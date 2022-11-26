@@ -21,11 +21,11 @@ body {
   }
 }
 .heading{
-  font-size: 120px;
+  font-size: 100px;
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .main{
-  padding: 50px;
+  margin-top: 100px;
 }
 .navbar{
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -38,8 +38,10 @@ body {
   padding: 50px;
 }
 .about{
-  padding: 61px;
   background-size: cover;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
 }
 .fa-moon{
   font-size:40px;
@@ -80,12 +82,10 @@ transition: 2s ease-in-out;
 
 }
 
-.paragraphs{
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-}
 .paragraphs span{
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: column;
   line-height: 35px;
   padding: 10px;
 }
@@ -95,14 +95,21 @@ transition: 2s ease-in-out;
 .copyright{
   text-align: center;
   align-items: center;
-  justify-content: center;
+  bottom: 0;
   padding: 10px;
+  position: relative;
+  width: 100%;
 }
 .copyright h2{
-  font-size: 20px;
+  font-size: 15px;
 
 }
 .work{
+  padding: 10px;
+  margin-top: -20px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   font-family: monospace;
 }
 
@@ -118,12 +125,43 @@ transition: 2s ease-in-out;
 }
 
 .workinfo{
-  min-height: 51vh;
-  padding: 100px;
+  min-height: 69vh;
   text-align: center;
+  padding: 40px;
 }
-
 .social a:hover{
   transition: 0.5s ease-in-out;
   filter: invert(1);
+}
+
+
+.cursor {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  border: 1px solid black;
+  transition: all 200ms ease-out;
+  position: fixed;
+  pointer-events: none;
+  left: 0;
+  top: 0;
+  transform: translate(calc(-50% + 15px), -50%);
+}
+
+.cursor2 {
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  background-color: black;
+  opacity: .3;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  transition: width .3s, height .3s, opacity .3s;
+}
+
+.cursorinnerhover {
+  width: 50px;
+  height: 50px;
+  opacity: .5;
 }
