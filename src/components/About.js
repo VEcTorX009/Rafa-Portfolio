@@ -10,7 +10,7 @@ export default function About(props) {
       <div className="container intro">
         <div className="paragraphs">
           <span>
-            Hi, I'm Rafa. I am very interested in technology specifically
+            Hi, I'm Simple. I am very interested in technology specifically
             Cyber-Security
           </span>
           <span>

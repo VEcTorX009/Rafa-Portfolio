@@ -11,7 +11,7 @@ export default function Navbar(props) {
           href="/home"
           style={{ fontFamily: "monospace" }}
         >
-          Rafa
+          Simple
         </a>
         <button
           className="navbar-toggler"
